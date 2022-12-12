@@ -1,0 +1,35 @@
+.mainCTAContainer {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCTAContainer .sectionHeading {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 28px;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.mainCTAContainer .sliderContainer {
+  width: 100%;
+  height: auto;
+  margin: 3rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainCTAContainer {
+    padding: 1rem 0;
+  }
+
+  .mainCTAContainer .sliderContainer {
+    width: 80%;
+    height: auto;
+  }
+}

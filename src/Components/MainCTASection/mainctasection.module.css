@@ -1,0 +1,96 @@
+.mainCTAContainer {
+  width: 100%;
+  height: auto;
+
+  padding: 3rem 0;
+}
+
+.mainCTAContainer .sectionHeading {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 28px;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.mainCTAContainer .boxesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 3rem 0;
+}
+
+.mainCTAContainer .boxesContainer .box {
+  width: 30%;
+  height: auto;
+
+  padding: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.mainCTAContainer .boxesContainer .box:hover {
+  transform: scale(1.05);
+}
+
+.mainCTAContainer .boxesContainer .box img {
+  width: 30px;
+  height: 30px;
+
+  object-fit: contain;
+
+  transition: all 0.5s ease;
+}
+
+.mainCTAContainer .boxesContainer .box:hover img {
+  transform: scale(1.2);
+}
+
+.mainCTAContainer .boxesContainer .box .textContainer .primaryText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: white;
+
+  margin: 0.5rem 0;
+}
+
+.mainCTAContainer .boxesContainer .box .textContainer .secondaryText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .mainCTAContainer {
+    padding: 1rem 0;
+  }
+
+  .mainCTAContainer .boxesContainer {
+    flex-direction: column;
+  }
+
+  .mainCTAContainer .boxesContainer .box {
+    width: 95%;
+    height: auto;
+  }
+
+  .mainCTAContainer .boxesContainer .box:nth-child(2) {
+    margin: 1rem 0;
+  }
+
+  .mainCTAContainer .sectionHeading {
+    font-size: 20px;
+  }
+}

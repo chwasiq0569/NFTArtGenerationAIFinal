@@ -1,0 +1,150 @@
+.imageCardContainer {
+    width: 300px;
+    max-height: 500px;
+    height: auto;
+    border: 2px solid red;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    /* margin: 0.5rem; */
+
+    cursor: pointer;
+
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.imageCardContainer .userProfile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imageCardContainer .userProfile img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.imageCardContainer .userProfile p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 0.5rem;
+}
+
+.imageCardContainer .nftDetails {
+    width: 100%;
+}
+
+.imageCardContainer .nftDetails .nftName {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.imageCardContainer .nftDetails .nftDescription {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+
+
+}
+
+.imageCardContainer:hover {
+    transform: scale(1.02);
+}
+
+.imageCardContainer .imageWrapper {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+    /* background-color: black; */
+    /* opacity: 0.25; */
+}
+
+.imageCardContainer .imageWrapper p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: white;
+
+    opacity: 0.7;
+}
+
+
+.imageCardContainer .nftImage {
+    width: 100%;
+    /* height: 230px; */
+    object-fit: contain;
+    border-radius: 15px;
+
+    margin: 1rem 0;
+}
+
+.imageCardContainer .lowerContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 8px;
+}
+
+.imageCardContainer .lowerContent .details {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+
+    color: #ffffff;
+}
+
+.imageCardContainer .lowerContent .details p:nth-child(2) {
+    font-size: 10px;
+}
+
+.imageCardContainer .lowerContent .buyButton {
+    width: 50px;
+    height: 20px;
+
+    background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+    border-radius: 3px;
+
+    border: none;
+    outline: none;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 11px;
+
+    color: white;
+
+    cursor: pointer;
+}

@@ -1,0 +1,181 @@
+.heroContainer {
+  width: 100%;
+  height: calc(100vh - 3.5rem);
+  display: flex;
+}
+
+.heroContainer .heroTextContainer,
+.heroContainer .heroCoverContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.heroContainer .heroCoverContainer {
+  align-items: flex-end;
+}
+
+.heroContainer .heroTextContainer h1 {
+  width: 70%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  /* or 60px */
+  color: #ffffff;
+}
+
+.heroContainer .heroTextContainer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  /* or 36px */
+
+  /* half white */
+
+  color: rgba(255, 255, 255, 0.5);
+
+  margin: 1.5rem 0;
+}
+
+.heroContainer .heroTextContainer .ctaContainer {
+  width: 100%;
+  display: flex;
+}
+
+.heroContainer .heroTextContainer .ctaContainer button {
+  width: auto;
+
+  border: none;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.heroContainer .heroTextContainer .ctaContainer button:first-child {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  padding: 8px 20px;
+}
+
+.heroContainer .heroTextContainer .ctaContainer button:nth-child(2) {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  padding: 10px 20px;
+
+  margin-left: 20px;
+}
+
+.heroContainer .heroCoverContainer .coverImageContainer {
+  width: 80%;
+  height: 80%;
+}
+
+.heroContainer .heroCoverContainer .coverImageContainer img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroContainer .heroTextContainer,
+  .heroContainer .heroCoverContainer {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+
+  .heroContainer .heroTextContainer {
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroContainer .heroCoverContainer {
+    justify-content: flex-start;
+
+    margin-top: 2rem;
+  }
+
+  .heroContainer .heroTextContainer h1 {
+    width: 85%;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .heroContainer .heroTextContainer p {
+    width: 85%;
+    font-size: 14px;
+    margin: 1rem 0;
+    margin-top: 12px;
+  }
+
+  .heroContainer .heroTextContainer .ctaContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroContainer .heroTextContainer .ctaContainer button:first-child,
+  .heroContainer .heroTextContainer .ctaContainer button:nth-child(2) {
+    font-size: 10px;
+    border-radius: 5px;
+    /* padding: 8px 20px; */
+  }
+
+  .heroContainer .heroTextContainer .ctaContainer button:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+
+/* @media only screen and (max-width: 540px) {
+  .heroContainer .heroTextContainer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .heroContainer .heroCoverContainer {
+    width: 0;
+  }
+
+  .heroContainer .heroTextContainer h1,
+  .heroContainer .heroTextContainer p {
+    width: 90%;
+  }
+
+  .heroContainer .heroTextContainer .ctaContainer {
+    width: 100%;
+    justify-content: center;
+  }
+} */

@@ -1,0 +1,35 @@
+.footerContainer {
+  width: 100%;
+  height: 2.5rem;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 3rem;
+}
+
+.footerContainer .footerLeftSide,
+.footerContainer .footerRightSide {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .footerContainer .footerLeftSide {
+    display: none;
+  }
+
+  .footerContainer .footerRightSide {
+    width: 100%;
+    justify-content: center;
+  }
+}

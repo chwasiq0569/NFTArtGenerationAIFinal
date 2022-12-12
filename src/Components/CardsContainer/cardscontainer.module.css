@@ -1,0 +1,69 @@
+.cardsContainer {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+
+  margin: 5rem 0;
+}
+
+.cardsContainer .cardsWrapper {
+  /* width: auto;
+
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; */
+
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.generateArtBtn {
+  width: 200px;
+  height: 45px;
+
+  background: linear-gradient(101.12deg,
+      #eb1484 27.35%,
+      #c91cc3 99.99%,
+      #c81cc5 100%,
+      #c81cc5 100%);
+  border-radius: 10px;
+
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+
+  color: white;
+
+  /* margin: 1rem 0; */
+  /* margin: auto auto; */
+
+  cursor: pointer;
+
+  outline: none;
+  border: none;
+
+  margin-bottom: 2rem;
+}
+
+.btnAndLoaderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loaderText {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+
+  color: white;
+
+  margin: 2rem 0;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,156 @@
+.pageContainer {
+    background: radial-gradient(70.4% 106.08% at 39.77% 39.04%,
+            #02006c 0%,
+            #181e41 63.29%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.pageContainer .contentContainer {
+    width: 100%;
+    height: auto;
+    padding: 0 3rem;
+    min-height: calc(100vh - 2.5rem);
+}
+
+.pageContainer .contentContainer .pageHead {
+    width: 70%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    /* or 60px */
+
+    color: #ffffff;
+
+    margin-top: 6rem;
+}
+
+.pageContainer .contentContainer .pageDescription {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 1.5rem 0;
+}
+
+.nftInputForm {
+    display: flex;
+}
+
+.nftInputForm .formLeftSide,
+.nftInputForm .formRightSide {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nftInputForm .formLeftSide {
+    padding-top: 2rem;
+}
+
+
+.nftInputForm .formLeftSide input {
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-left: 20px;
+
+    border: none;
+    outline: none;
+
+    margin: 1rem 0;
+}
+
+.nftInputForm .formLeftSide .loaderContainer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nftInputForm .formLeftSide button {
+    margin-top: 1rem;
+    width: 200px;
+    height: 45px;
+    background: linear-gradient(101.12deg,
+            #eb1484 27.35%,
+            #c91cc3 99.99%,
+            #c81cc5 100%,
+            #c81cc5 100%);
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.nftInputForm .formLeftSidebutton:disabled,
+.nftInputForm .formLeftSide button[disabled] {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+
+.nftInputForm .formRightSide .nftImageUpload {
+    width: 100%;
+    height: 100%;
+}
+
+.nftInputForm .formRightSide .nftImageUpload label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.nftInputForm .formRightSide .nftImageUpload label img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+    .pageContainer .contentContainer .pageHead {
+        margin-top: 3rem;
+    }
+
+    .nftInputForm {
+        flex-direction: column;
+    }
+
+    .nftInputForm .formLeftSide,
+    .nftInputForm .formRightSide {
+        width: 100%;
+
+        align-items: center;
+    }
+
+    .nftInputForm .formLeftSide {
+        padding-top: 0rem;
+    }
+
+    .nftInputForm .formRightSide .nftImageUpload {
+        width: 75%;
+        height: 75%;
+    }
+
+    .nftInputForm .formLeftSide button {
+        width: 100%;
+    }
+}

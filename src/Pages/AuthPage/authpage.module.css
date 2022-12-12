@@ -1,0 +1,98 @@
+.authPageContainer {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+}
+
+.authPageContainer .intoDesignContainer,
+.authPageContainer .authFormContainer {
+  width: 50%;
+  height: 100%;
+}
+
+.authPageContainer .intoDesignContainer {
+  background: radial-gradient(70.4% 106.08% at 39.77% 39.04%,
+      #02006c 0%,
+      #181e41 63.29%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authPageContainer .intoDesignContainer img {
+  width: 35%;
+  height: 35%;
+  object-fit: contain;
+  z-index: 1000;
+}
+
+.authPageContainer .intoDesignContainer::before {
+  width: 50%;
+  content: "";
+  background-image: url("../../assets/images/pexels-miriam-espacio-110854.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.authPageContainer .authFormContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(70.4% 106.08% at 39.77% 39.04%,
+      #02006c 0%,
+      #181e41 63.29%);
+
+}
+
+.authPageContainer .authFormContainer .logoContainer {
+  width: 400px;
+}
+
+.authPageContainer .alreadyAccount {
+  /* margin-top: auto; */
+
+  position: absolute;
+  bottom: 2%;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 180%;
+  /* or 36px */
+
+  /* half white */
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.authPageContainer .alreadyAccount span {
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .authPageContainer .intoDesignContainer {
+    display: none;
+  }
+
+  .authPageContainer .authFormContainer {
+    width: 100%;
+  }
+}

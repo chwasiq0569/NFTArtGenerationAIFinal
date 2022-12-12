@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.navbarContainer {
+  width: 100%;
+  height: 3.5rem;
+
+  background-color: transparent;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  z-index: 2;
+
+  position: relative;
+}
+
+.navbarContainer .logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarContainer .navItemsContainer {
+  width: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbarContainer .navItemsContainer .navItem {
+  /* margin: 0 40px; */
+
+  margin-right: 40px;
+}
+
+.navbarContainer .navItemsContainer .navItem span {
+  /* margin: 0 40px; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.navbarContainer .navItemsContainer .navCtaBtnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navbarContainer .navItemsContainer .navCtaBtnContainer .signInBtn {
+  width: 120px;
+  height: 35px;
+
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 8px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+}
+
+.avatarAndUsername {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* margin-right: 25px; */
+
+  cursor: pointer;
+}
+
+.avatarAndUsername p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+
+  color: #ffffff;
+
+  margin-right: 0.5rem;
+}
+
+.avatarAndUsername img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.navbarContainer .navItemsContainer .navCtaBtnContainer .getBalanceBtn {
+  margin-left: 30px;
+  width: 160px;
+  height: 35px;
+
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 8px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.navbarContainer .navItemsContainer .navCtaBtnContainer .overlayBtn {
+  margin-left: 25px;
+  width: 160px;
+  height: 35px;
+  background-color: transparent !important;
+  border: 2px solid white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.navbarContainer .mobileNavWrapper {
+  width: 270px;
+  height: 100%;
+
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  background: rgba(22, 31, 156, 0.7);
+
+  z-index: 5;
+}
+
+.menuText {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: underline;
+  color: white;
+
+  cursor: pointer;
+}
+
+.navbarContainer .mobileNavWrapperClosed {
+  right: -270px;
+}
+
+.closeNav {
+  position: absolute;
+  top: 2%;
+  left: 8%;
+  color: white;
+  font-family: 'Unbounded', cursive;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.navbarContainer .mobileNavWrapper {
+  padding: 2rem;
+}
+
+.navbarContainer .mobileNavWrapper .mobileNavItem {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin: 1.5rem 0;
+
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 12px;
+
+  color: whitesmoke;
+
+  cursor: pointer;
+}
+
+.navbarContainer .mobileNavWrapper .mobileNavCtaBtnContainer button {
+  width: 120px;
+  height: 35px;
+
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 8px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.loaderContainer {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

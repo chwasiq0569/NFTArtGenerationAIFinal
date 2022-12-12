@@ -1,0 +1,14 @@
+.pageContainer {
+    background: radial-gradient(70.4% 106.08% at 39.77% 39.04%,
+            #02006c 0%,
+            #181e41 63.29%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.pageContainer .contentContainer {
+    width: 100%;
+    height: auto;
+
+    padding: 0 3rem;
+}
